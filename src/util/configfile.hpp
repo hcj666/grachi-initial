@@ -84,7 +84,7 @@ namespace graphchi {
         if (f == NULL) {
             std::cout << "ERROR: Could not read configuration file: " << filename << std::endl;
             std::cout << "Please define environment variable GRAPHCHI_ROOT or run the program from that directory." << std::endl;
-            assert(f != NULL);
+            assert(f != NULL);//条件返回错误，则终止程序执行
         }
         
         char s[4096];

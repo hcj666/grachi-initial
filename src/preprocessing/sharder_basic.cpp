@@ -41,7 +41,7 @@ using namespace graphchi;
 
 
 int main(int argc, const char ** argv) {
-    graphchi_init(argc, argv);
+    graphchi_init(argc, argv); //图初始化
     
     global_logger().set_log_level(LOG_DEBUG);
     

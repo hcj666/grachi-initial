@@ -59,15 +59,15 @@ namespace graphchi {
     static void FIXLINE(char * s);
     
     static void parse(int &x, const char * s) {
-        x = atoi(s);
+        x = atoi(s);//将字符串转化为整数
     }
     
     static void parse(unsigned int &x, const char * s) {
-        x = (unsigned int) strtoul(s, NULL, 10);
+        x = (unsigned int) strtoul(s, NULL, 10);//把字符串转换为unsigned int
     }
     
     static void parse(float &x, const char * s) {
-        x = (float) atof(s);
+        x = (float) atof(s);//把字符串转化为浮点数
     }
     
     
@@ -81,7 +81,7 @@ namespace graphchi {
     }
     
     static void parse(long &x, const char * s) {
-        x = atol(s);
+        x = atol(s);//把字符串转化为长整型数
     }
     
     static void parse(char &x, const char * s) {

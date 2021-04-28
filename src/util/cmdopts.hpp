@@ -95,7 +95,7 @@ namespace graphchi {
         }
     }
     
-    static void set_argc(int argc, const char ** argv);
+    static void set_argc(int argc, const char ** argv);//
     static void set_argc(int argc, const char ** argv) {
         _argc = argc;
         _argv = (char**)argv;
