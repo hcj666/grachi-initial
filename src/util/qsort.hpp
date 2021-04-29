@@ -50,7 +50,7 @@ E median(E a, E b, E c, BinPred f) {
 template <class E, class BinPred>
 void quickSort(E* A, int n, BinPred f) {
     if (n < ISORT) insertionSort(A, n, f);
-    else {
+    else {//+++++++++
         E p = A[rand() % n]; // Random pivot
         E* L = A;   // below L are less than pivot
         E* M = A;   // between L and M are equal to pivot
