@@ -14,10 +14,13 @@ namespace graphchi {
             generate_bit_masks();
         }
         
-        dense_bitset(size_t size) : array(NULL), len(size) {
+        /**my:它是一种能够表示任何对象的大小（以字节为单位）的类型：
+         * size_t是sizeof运算符返回的类型，在标准库中广泛用于表示大小和计数。
+         * 是一种数据相关的无符号类型，它被设计得足够大以便能够存储内存中任意对象的大小*/
+        dense_bitset(size_t size) : array(NULL), len(size) { 
             resize(size);
             clear();
-            generate_bit_masks();
+            generate_bit_masks(); //my:生成位掩码
         }
         
         
@@ -27,7 +30,8 @@ namespace graphchi {
             len = n;
             //need len bits
             arrlen =  n / (8*sizeof(size_t)) + 1;
-            array = (size_t*)realloc(array, sizeof(size_t) * arrlen);
+            //my:指针名=（数据类型*）realloc（要改变内存大小的指针名，新的大小）。
+            array = (size_t*)realloc(array, sizeof(size_t) * arrlen); 
         }
         
         void clear() {
