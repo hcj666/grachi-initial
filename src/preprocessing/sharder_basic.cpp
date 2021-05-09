@@ -38,8 +38,7 @@
 
 using namespace graphchi;
 
-
-
+//wyh is sb
 int main(int argc, const char ** argv) {
     graphchi_init(argc, argv); //图初始化
     
