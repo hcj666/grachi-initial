@@ -51,6 +51,11 @@ namespace graphchi {
         int last_iteration;
         int execthreads;
         std::vector<double> deltas;
+        /**
+         * struct timeval {
+        /*  long    tv_sec;         /* seconds */
+        /*  long    tv_usec;        /* and microseconds */
+        /*  };*/
         timeval start;
         std::string filename;
         
